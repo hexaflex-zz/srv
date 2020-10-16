@@ -28,9 +28,11 @@ To serve a specific directory on a fixed address/port:
     $ srv -addr ":8080" assets/
 
 To use TLS encryption, specify the `-tls` flag. Note that this will only work
-when the server is accessibly through a public domain:
+when the server is accessibe through a public domain:
 
     $ srv -tls -addr "mydomain.org:8080" assets/
+
+When using TLS, certificates are cached in `$TEMP/srv-certs`.
 
 
 ## License
